@@ -19,7 +19,9 @@ async function main() {
       dueOffsetDays: 0,
       sortOrder: 0,
     },
-    update: {},
+    update: {
+	externalUrl: "https://specialistimaging.com.au/opening-times/",
+},
   });
 
   await prisma.checklistTemplate.upsert({
